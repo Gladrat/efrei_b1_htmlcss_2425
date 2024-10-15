@@ -4,35 +4,92 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Entraînement sur les sélecteurs CSS</title>
+    <style>
+      /* Selecteur global */
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* Selecteur d'élément HTML (balise) */
+      a {
+        color: #007bff;
+        text-decoration: underline dotted;
+      }
+
+      a:hover {
+        color: #007bff;
+        text-decoration: underline dotted;
+      }
+
+      /* Selecteur d'id - UNIQUE DANS LA PAGE */
+      #lien-accueil {
+        color: #007bff9f;
+      }
+
+      #welcome {
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+        padding: 10px;
+        width: 500px;
+        margin: auto;
+
+        text-align: center;
+      }
+
+      /* Classe - Il peut y en avoir plusieurs */
+      .text-service {
+        color: red;
+        font-weight: bold;
+      }
+
+      /* OU */
+      h1,
+      h2,
+      h3 {
+        text-transform: uppercase;
+      }
+
+      /* ET */
+
+
+      /* p span {
+        color: orchid;
+      } */
+    </style>
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li><a href="/">Accueil</a></li>
-          <li><a href="/faire-devis.html">Devis gratuit</a></li>
-          <li><a href="/references.html">Nos références</a></li>
-          <li><a href="/back-office">Administration</a></li>
+          <li><a class="lien-menu" id="lien-accueil" href="/">Accueil</a></li>
+          <li><a class="lien-menu" href="/faire-devis.html">Devis gratuit</a></li>
+          <li><a class="lien-menu" href="/references.html">Nos références</a></li>
+          <li><a class="lien-menu" href="/back-office">Administration</a></li>
         </ul>
       </nav>
     </header>
 
-    <section>
+    <section id="welcome">
       <h1>Bienvenue sur notre site</h1>
-      <p>Ceci est un paragraphe d'introduction.</p>
+      <p>Ceci est un <span>paragraphe</span> d'introduction.</p>
+      <span>Example</span>
     </section>
 
     <section>
       <h2>Nos Services</h2>
       <article>
         <h3>Design Web</h3>
-        <p>Maquettage de vos idées.</p>
-        <p>Conception de sites web modernes.</p>
+        <p class="text-service">Maquettage de vos idées.</p>
+        <p class="text-service">Conception de sites web modernes.</p>
       </article>
       <article>
         <h3>Développement Backend</h3>
-        <p>Création d'applications backend performantes.</p>
-        <p>Stockage performant de vos données.</p>
+        <p class="text-service">
+          Création d'applications backend performantes.
+        </p>
+        <p class="text-service">Stockage performant de vos données.</p>
       </article>
     </section>
 
@@ -42,7 +99,7 @@
     </section>
 
     <section>
-      <h2>Contactez-nous</h2>
+      <h2 class="titre-important">Contactez-nous</h2>
       <form>
         <label for="name">Nom :</label>
         <input type="text" name="name" />

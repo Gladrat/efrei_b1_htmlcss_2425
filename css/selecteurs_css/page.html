@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div:first-of-type::before {
+        /* background-color: blueviolet; */
+        /* width: 100px; */
+        /* content: "RM{This_is_th3_fla4g}"; */
+        /* font-size: 1px; */
+      }
+
+      div:first-of-type:hover {
+        background-color: #0558b1;
+      }
+
+      div {
+        background-color: chocolate;
+        width: 250px;
+        height: 150px;
+        margin: auto;
+        margin-bottom: 5px;
+      }
+
+      p::first-letter {
+        /* color: red; */
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .button {
+        background-color: #007bff;
+        border: 1px solid rgba(0, 0, 0, 0.089);
+        color: white;
+        padding: 10px;
+        border-radius: 15px;
+        width: 100px;
+        height: 20px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+      }
+
+      .button:active {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="button">Click-me</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores atque dolor, consequuntur ducimus adipisci expedita ut quisquam et saepe a quasi dicta quae tempore sint deserunt dignissimos reprehenderit blanditiis ab.</p>
+
+    <div class="boite"></div>
+    <div class="boite"></div>
+    <div class="boite"></div>
+  </body>
+</html>
