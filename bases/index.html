@@ -1,50 +1,190 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ma page !!</title>
+    <title>CV de Jean Dupont</title>
+    <style>
+      /* CSS goes here ! */
+
+      body {
+        font-family: "Roboto", Arial, sans-serif;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 45px;
+        color: #2a9d8f;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        color: #2a2a2a;
+        background-color: #f0f0f0;
+        border-radius: 8px;
+        text-transform: uppercase;
+        padding: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      a:hover {
+        color: #0056b3;
+        text-decoration: underline;
+      }
+
+      section {
+        margin: 20px 0;
+        padding: 10px;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 0.8em;
+        color: #777;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        background-color: #f9f9f9;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      article {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+
+      /* body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 45px;
+        color: cadetblue;
+        border: 3px dotted cadetblue;
+        border-radius: 50px;
+        padding: 10px;
+      }
+
+      hr {
+        display: none;
+      }
+
+      h2 {
+        background-color: cadetblue;
+        color: white;
+        font-size: larger;
+        border-radius: 30px;
+        text-align: center;
+        padding: 8px;
+      } */
+    </style>
   </head>
   <body>
-    <!-- <balise attribut="valeur" attribut2="valeur" >Texte de la balise</balise> -->
-    <h1 hidden id="titre_1" class="un_titre">Ma super page</h1>
-    <h2 class="un_titre">Sous-titre</h2>
-    <p><em>Bienvenue</em> sur mon site <mark>internet</mark>.</p>
-    <p>Bienvenue sur <strong>mon</strong> site internet</p>
-    <a title="Aller vers Google" href="https://google.fr">Lien vers Google</a>
+    <header>
+      <h1>CV de Jean Dupont</h1>
+      <hr />
+      <h2 id="infos">Informations Personnelles</h2>
+      <address>
+        <ul>
+          <li>
+            <strong>Adresse :</strong>
+            <a target="_blank" href="https://maps.app.goo.gl/9ojxhPo77abZfkEK7">
+              123 rue de la Liberté, 75001 Paris
+            </a>
+          </li>
+          <li>
+            <strong>Email :</strong>
+            <a
+              href="mailto:jean.dupont@email.com?subject=Demande%20de%20services">
+              Contactez-moi
+            </a>
+          </li>
+          <li><strong>Téléphone :</strong> +33 123 456 789</li>
+        </ul>
+      </address>
+    </header>
+
+    <main>
+      <section id="education">
+        <h2>Éducation</h2>
+
+        <article>
+          <h3>Master en Informatique</h3>
+          <p>Université de Paris</p>
+          <time>2015-2017</time>
+        </article>
+        <article>
+          <h3>Licence en Informatique</h3>
+          <p>Université de Paris</p>
+          <time>2012-2015</time>
+        </article>
+      </section>
+
+      <section id="exp-pro">
+        <h2>Expérience Professionnelle</h2>
+
+        <article>
+          <h3>Développeur Web chez TechCorp</h3>
+          <time><p>2018-présent</p></time>
+          <ul>
+            <li>Conception et développement de sites web</li>
+            <li>Optimisation des performances et de la sécurité</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Stagiaire en développement chez WebStart</h3>
+          <time><p>2017-2018</p></time>
+          <ul>
+            <li>Support dans le développement de fonctionnalités</li>
+            <li>Réalisation de tests et documentation</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="comp">
+        <h2>Compétences</h2>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Python, Java</li>
+          <li>Frameworks : React, Vue.js</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Langues</h2>
+        <ul>
+          <li>Français : langue maternelle</li>
+          <li>Anglais : courant</li>
+          <li>Espagnol : débutant</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Centres d'intérêt</h2>
+        <ul>
+          <li>Cuisine française</li>
+          <li>Voyages, randonnées</li>
+          <li>Photographie</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>Tout droits réservés - Jean Dupont - 2023</footer>
   </body>
-  <div>
-  <h2>Mes services sur Bordeaux :</h2>
-  <ul>
-    <li>Réparation de téléphone</li>
-    <li>Sites Web</li>
-  </ul>
-
-<h2>Mes services sur Bordeaux :</h2>
-  <ol>
-    <li>Réparation de téléphone</li>
-    <li>Sites Web</li>
-  </ol>
-</div>
-
-<dl>
-  <dt>Réparation de téléphones</dt>
-  <dd>Je répare tous les mobiles android et apple</dd>
-  <dt></dt>
-  <dt></dt>
-</dl>
-
-<!-- <img src="https://www.efrei.fr/wp-content/themes/efrei/images/logo-efrei.svg" alt="Logo de l'Efrei"> -->
-
-<img src="https://picsum.photos/200/100" alt="">
-
-<blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dolorem quis quaerat ullam, exercitationem minus, aperiam id maiores in qui accusantium nesciunt ex praesentium iste rem quam. Dolorum, alias necessitatibus.</blockquote>
-
-<pre>
-  def hello():
-    print("hello !")
-</pre>
-
-<kbd>ctrl + alt + suppr</kbd>
-
 </html>
