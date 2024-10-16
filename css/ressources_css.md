@@ -11,6 +11,7 @@
 
 - https://mastery.games/flexboxzombies/
 - https://flexboxfroggy.com/
+- http://www.flexboxdefense.com/
 
 # Grid
 
@@ -29,3 +30,7 @@
 # Jeux CSS
 
 - https://cssbattle.dev/
+
+# Jeux généralistes
+
+- https://www.codingame.com/start/fr/
