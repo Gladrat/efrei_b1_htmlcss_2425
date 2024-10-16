@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style type="text/css">
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        header {
+            background-color: chocolate;
+            height: 100px;
+        }
+
+        footer {
+            background-color: darkgrey;
+            height: 100px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: white;
+            line-height: 100px;
+            margin: 0;
+        }
+
+        h3 {
+            text-align: center;
+            color: white;
+            margin: 0;
+        }
+
+        article {
+            padding: 10px;
+            margin: 10px;
+            background: aqua;
+        }
+
+        section {
+            display: flex;
+            /* flex-direction: column; */
+        }
+        
+        section > article {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+
+    <section>
+        <article>
+            <h3>First article</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A harum, doloremque amet, quod velit deserunt fugit blanditiis vero qui pariatur tempore minima, mollitia quo beatae consectetur excepturi deleniti molestias. Animi, deleniti ratione laboriosam nam perspiciatis in error ab, nulla, expedita alias optio? Rem exercitationem, quo sit quae necessitatibus aliquam. Totam.</p>
+        </article>
+
+        <article>
+            <h3>Second article</h3>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, amet modi! Porro, autem quae. Porro sit veniam aliquid dolore ipsa perferendis itaque temporibus. Dolor neque porro, quod explicabo aperiam similique eius. Repellendus autem ipsum ratione iste, doloribus error ab illo ex sit inventore, sequi, laborum excepturi voluptate laboriosam corporis. Unde et non obcaecati eius nisi! Non doloremque quae veritatis ipsum.</p>
+        </article>
+
+        <article>
+            <h3>Third article</h3>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dolorum deleniti, voluptatem, quam placeat ullam dolorem numquam delectus vero tempora saepe labore excepturi ipsa! Saepe tempora unde deserunt autem consectetur voluptates, quaerat laborum obcaecati maxime ipsam similique blanditiis dolore tenetur eius quisquam nostrum dignissimos voluptatum repellat et fugiat nisi. Harum atque doloremque suscipit asperiores numquam repudiandae esse quos sequi alias!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor eaque iusto illo alias rerum ipsa dolorum ipsum perspiciatis placeat quas, laborum at accusantium vero provident? Minus nulla incidunt necessitatibus eveniet, perspiciatis, culpa eligendi nostrum reiciendis odio amet id nisi?</p>
+        </article>
+    </section>
+    <footer>
+        <h2>Footer</h2>
+    </footer>
+</body>
+</html>
