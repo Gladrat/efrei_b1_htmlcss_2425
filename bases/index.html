@@ -6,19 +6,21 @@
     <style>
       /* CSS goes here ! */
 
+      li {
+        display: inline-block;
+        margin: 0 10px;
+        padding: 10px 20px;
+        background-color: antiquewhite;
+        border-radius: 20px;
+      }
+
       h1 {
-        border-bottom: 10px dotted purple;
+        text-align: center;
+        display: block;
+        width: 400px;
+        background-color: aquamarine;
 
-        /* padding: 10px 10px 10px 10px; */
-
-        padding: 10px; /* Valeur identique partout */
-        padding: 10px 20px; /* haut-bas: 10px & droite-gauche: 10px */
-        padding: 10px 20px 30px 40px; /* Une valeur différente pour chaque point cardinal */
-
-        /* padding-top: 10px;
-        padding-right: 10px;
-        padding-bottom: 10px;
-        padding-left: 10px; */
+        margin: auto;
       }
 
       /* body {
@@ -111,6 +113,13 @@
   </head>
   <body>
     <header>
+      <nav>
+        <h2>Menu:</h2>
+        <ul>
+          <li><a href="contact.html">Formulaire de contact</a></li>
+          <li><a href="admin.html">Zone privée</a></li>
+        </ul>
+      </nav>
       <h1>CV de Jean Dupont</h1>
       <hr />
       <h2 id="infos">Informations Personnelles</h2>
